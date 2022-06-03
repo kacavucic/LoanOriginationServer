@@ -52,123 +52,123 @@ public class Controller {
 
     // LOGIN
     public GenericEntity login(GenericEntity entity) throws Exception {
-        AbstractGenericOperation so = new Login();
-        so.execute(entity);
-        return ((Login) so).getObject();
+        AbstractGenericOperation genericOperation = new Login();
+        genericOperation.execute(entity);
+        return ((Login) genericOperation).getObject();
     }
 
     // LOGOUT
     public boolean logout(GenericEntity entity) throws Exception {
-        AbstractGenericOperation so = new Logout();
-        so.execute(entity);
-        return ((Logout) so).getOK();
+        AbstractGenericOperation genericOperation = new Logout();
+        genericOperation.execute(entity);
+        return ((Logout) genericOperation).getOK();
     }
 
     // SAVE PRODUCT
     public Long saveProduct(GenericEntity entity) throws Exception {
-        AbstractGenericOperation so = new SaveProduct();
-        so.execute(entity);
-        return ((SaveProduct) so).getIndex();
+        AbstractGenericOperation genericOperation = new SaveProduct();
+        genericOperation.execute(entity);
+        return ((SaveProduct) genericOperation).getIndex();
     }
 
     // GET ALL PRODUCTS
     public List<GenericEntity> getAllProducts() throws Exception {
-        AbstractGenericOperation so = new GetAllProducts();
-        so.execute(new Product());
-        return ((GetAllProducts) so).getList();
+        AbstractGenericOperation genericOperation = new GetAllProducts();
+        genericOperation.execute(new Product());
+        return ((GetAllProducts) genericOperation).getList();
     }
 
     // FIND PRODUCTS
     public List<GenericEntity> findProducts(GenericEntity entity) throws Exception {
-        AbstractGenericOperation so = new FindProducts();
-        so.execute(entity);
-        return ((FindProducts) so).getList();
+        AbstractGenericOperation genericOperation = new FindProducts();
+        genericOperation.execute(entity);
+        return ((FindProducts) genericOperation).getList();
     }
 
     // EDIT PRODUCT
     public void editProduct(GenericEntity entity) throws Exception {
-        AbstractGenericOperation so = new EditProduct();
-        so.execute(entity);
+        AbstractGenericOperation genericOperation = new EditProduct();
+        genericOperation.execute(entity);
     }
 
     // DEACTIVATE PRODUCT
     public void deactivateProduct(GenericEntity entity) throws Exception {
-        AbstractGenericOperation so = new EditProduct();
-        so.execute(entity);
+        AbstractGenericOperation genericOperation = new EditProduct();
+        genericOperation.execute(entity);
     }
 
     // ACTIVATE PRODUCT
     public void activateProduct(GenericEntity entity) throws Exception {
-        AbstractGenericOperation so = new EditProduct();
-        so.execute(entity);
+        AbstractGenericOperation genericOperation = new EditProduct();
+        genericOperation.execute(entity);
     }
 
     // REGISTER CLIENT
     public long registerClient(GenericEntity entity) throws Exception {
-        AbstractGenericOperation so = new RegisterClient();
-        so.execute(entity);
-        return ((RegisterClient) so).getIndex();
+        AbstractGenericOperation genericOperation = new RegisterClient();
+        genericOperation.execute(entity);
+        return ((RegisterClient) genericOperation).getIndex();
     }
 
     // GET ALL CLIENTS
     public List<GenericEntity> getAllClients() throws Exception {
-        AbstractGenericOperation so = new GetAllClients();
-        so.execute(new Client());
-        return ((GetAllClients) so).getList();
+        AbstractGenericOperation genericOperation = new GetAllClients();
+        genericOperation.execute(new Client());
+        return ((GetAllClients) genericOperation).getList();
     }
 
     // FIND CLIENTS
     public List<GenericEntity> findClients(GenericEntity entity) throws Exception {
-        AbstractGenericOperation so = new FindClients();
-        so.execute(entity);
-        return ((FindClients) so).getList();
+        AbstractGenericOperation genericOperation = new FindClients();
+        genericOperation.execute(entity);
+        return ((FindClients) genericOperation).getList();
     }
 
     // EDIT CLIENT
     public void editClient(GenericEntity entity) throws Exception {
-        AbstractGenericOperation so = new EditClient();
-        so.execute(entity);
+        AbstractGenericOperation genericOperation = new EditClient();
+        genericOperation.execute(entity);
     }
 
     // CREATE LOAN APPLICATION
     public Long createLoanApplication(GenericEntity entity) throws Exception {
-        AbstractGenericOperation so = new CreateLoanApplication();
-        so.execute(entity);
-        return ((CreateLoanApplication) so).getIndex();
+        AbstractGenericOperation genericOperation = new CreateLoanApplication();
+        genericOperation.execute(entity);
+        return ((CreateLoanApplication) genericOperation).getIndex();
     }
 
     // GET ALL LOAN APPLICATIONS
     public List<GenericEntity> getAllLoanApplications() throws Exception {
-        AbstractGenericOperation so = new GetAllLoanApplications();
-        so.execute(new LoanApplication());
-        return ((GetAllLoanApplications) so).getList();
+        AbstractGenericOperation genericOperation = new GetAllLoanApplications();
+        genericOperation.execute(new LoanApplication());
+        return ((GetAllLoanApplications) genericOperation).getList();
     }
 
     // GET CREDIT BUREAU REPORT
     public GenericEntity getCreditBureauReport(GenericEntity entity) throws Exception {
-        AbstractGenericOperation so = new GetCreditBureauReport();
-        so.execute(entity);
-        return ((GetCreditBureauReport) so).getObject();
+        AbstractGenericOperation genericOperation = new GetCreditBureauReport();
+        genericOperation.execute(entity);
+        return ((GetCreditBureauReport) genericOperation).getObject();
     }
 
     // GET FRAUD REPORT
     public GenericEntity getFraudReport(GenericEntity entity) throws Exception {
-        AbstractGenericOperation so = new GetFraudReport();
-        so.execute(entity);
-        return ((GetFraudReport) so).getObject();
+        AbstractGenericOperation genericOperation = new GetFraudReport();
+        genericOperation.execute(entity);
+        return ((GetFraudReport) genericOperation).getObject();
     }
 
     // PROCESS LOAN APPLICATION
     public void processLoanApplication(GenericEntity entity) throws Exception {
-        AbstractGenericOperation so = new ProcessLoanApplication();
-        so.execute(entity);
+        AbstractGenericOperation genericOperation = new ProcessLoanApplication();
+        genericOperation.execute(entity);
     }
 
     // FIND LOAN APPLICATIONS
     public List<GenericEntity> findLoanApplications(GenericEntity entity) throws Exception {
-        AbstractGenericOperation so = new FindLoanApplications();
-        so.execute(entity);
-        return ((FindLoanApplications) so).getList();
+        AbstractGenericOperation genericOperation = new FindLoanApplications();
+        genericOperation.execute(entity);
+        return ((FindLoanApplications) genericOperation).getList();
     }
 
     public void startServer() throws IOException {
